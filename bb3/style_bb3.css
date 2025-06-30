@@ -1,0 +1,664 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; 
+  align-items: center;
+  margin: 0px 61px 0px 64px;
+  
+}
+.logo {
+  font-size: 44px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000;
+}
+
+.active {
+  border-bottom: 2px solid #000000;
+}
+
+.nav {
+  margin-right: 41px;
+  font-size: 23px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 31px;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  
+}
+
+.item {
+   height: 133px;
+  display: flex;
+  align-items: center;
+}
+
+.path {
+  border-top: 2px solid black;
+  width: 100%;
+}
+.her {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 52px 0 0 0 !important;
+}
+.title {
+  font-family: New York Extra Large;
+  font-weight: 700;
+  font-size: 54px;
+  margin: 0 0 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 858px;
+  height: 162px;
+}
+.title2 {
+  font-family: monospace, "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 592px;
+  height: 68px;
+  display: block;
+  margin: 0;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  margin: 0;
+}
+.hero img {
+  width: 100%;
+  margin-top: 52px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #000;
+  margin-top: 40px;
+  padding-right: 38px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 400px;
+  flex-wrap: wrap;
+}
+
+.author-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 6px;
+
+}
+
+.author-meta {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  width: 70%;
+}
+.share-buttons {
+  margin: 36px 20px 32px;
+ }
+
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 29px;
+  margin-left: 16px;
+  font-family: SF Pro Text;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.meta {
+  font-family: SF Pro Text;
+  font-size: 16px;
+  color: #666;
+  margin-left: 16px;
+  margin-top: 8px;
+}
+
+.share-buttons {
+  display: flex;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: fit-content;
+  background-color: #fff;
+  /* margin-left: 213px; */
+  /* margin-top: 15px; */
+}
+
+.share-btn {
+  border: none;
+  padding: 14px 25px;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.share-btn + .share-btn {
+  border-left: 1px solid #e0e0e0;
+}
+
+.share-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.paraha {
+  font-size: 20px;
+  color: #000;
+  margin: 0px auto 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  justify-self: center;
+  text-align: justify;
+  width: 50%;
+}
+
+.paraha h2 {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+.paraha p {
+  margin: 58px 0 0 0;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 52px 0 0 0;
+ 
+  overflow: hidden;
+}
+.pic img {
+  width: 854px;
+  height: 570px;
+  object-fit: cover;
+}
+.pic p {
+  font-size: 16px;
+  text-align: center;
+  font-family: SF Pro Text;
+  max-width: 481px;
+  margin: 12px auto 52px;
+  
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 77px;
+}
+
+.btn-social {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  width: 320px;
+  height: 64px;
+  border: solid 2px #cccccc98;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+  margin: 32px 0 34px 399px;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  
+  align-items: center;
+}
+
+.dashed-line {
+  border: none;
+  border-top: 0.5px dashed #000;
+  margin: 32px auto;
+  width: 600px;
+}
+.authernit {
+  /* width: 550px; */
+  text-align: justify;
+  font-size: 16px;
+  font-family: SF Pro Text;
+  margin: 0 auto;
+}
+
+.path2 {
+  margin: 132px 0 73px 0;
+  border-top: 2px solid black;
+  width: 100%;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 18px 0px 32px 0px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.scrolling-text {
+  font-family: SF Pro Text, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-bottom: 105px;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 2.4px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
+.title-digital1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.title-digital2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px 0px 26px 0px;
+}
+
+.footer-desc {
+  font-family: "New York Extra Large", serif;
+  max-width: 488px;
+  height: 71px;
+  text-align: center;
+  margin: 0 auto 32px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  margin: 0px 616px 0px;
+  width: 209px;
+  height: 27px;
+}
+
+.footer-links a {
+  color: white;
+  margin-right: 17px;
+  font-weight: 500;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #aaa;
+  line-height: 1.4;
+  margin: 64px 0 0 0;
+}
+
+.mobile-only-text {
+  display: none;
+  font-family: "SF Pro Text", sans-serif;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-bottom: 105px;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 4.93px;
+}
+.mobile-img{
+  display: flex;
+}
+
+.newsletter-box {
+  margin: 114px 400px 111px 400px;
+
+  padding: 0;
+  border: 1px solid #000;
+  text-align: center;
+  font-family: "Georgia", serif;
+  background-color: white;
+}
+
+.newsletter-box::before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 62px;
+}
+
+.newsletter-box h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 0 18px;
+}
+
+.newsletter-box p {
+  font-size: 20px;
+  color: #333;
+  margin: 0 51px 36px;
+  line-height: 1.4;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin: 0 60px 59px 60px;
+  font-size: 20px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  width: 300px;
+  max-width: 100%;
+}
+
+.newsletter-form button {
+  font-size: 25px;
+  padding: 10px 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.read-next {
+  max-width: 1000px;
+  margin: 27px 221px 0px;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.read-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.read-item img {
+  width: 304px;
+  height: 176px;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+
+.read-item p {
+  margin-top: 10px;
+  font-size: 22px;
+  font-family: SF Pro Text, sans-serif;
+  font-weight: 530;
+  color: #111;
+  line-height: 1.4;
+  display: block;
+}
+
+.content-mobile{
+  display: none;
+  text-align: left;
+  font-size: 16px;
+  font-family: New York Medium;
+}
+.content-mobile p{
+  margin: 0 20px 42px;
+}
+.content-mobile h2{
+  margin: 0 20px 19px 20px ;
+}
+.content h1{
+  font-size: 44px; text-align: center; font-weight: 700; margin: 0;
+}
+
+
+@media (max-width: 768px){
+  *{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 24px 0 0px 20px;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 26px;
+    margin: 0 ;
+    padding-bottom: 21px;
+   
+  }
+  .title{
+  width: 80%;
+  height: 70%;
+  font-size: 36px;
+  margin-bottom: 24px;
+}  
+.title2 {
+    width: 80%;
+    height: 70%;
+    
+    font-size: 16px;
+  }
+  .nav {
+   display: none;
+  }
+
+  
+  .menu-icon {
+    display: block;
+    margin:    0 ;
+    padding-bottom: 24px;
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 32px;
+  }
+  .small{
+  border-top: 2px solid black;
+  width: 90%;
+  
+  margin:24px 0 0 20px;
+  }
+  .author-avatar {
+    width: 56px;
+    height: 48px;
+  }
+  .author-info{
+    margin: 0 auto;
+  }
+  .author-info img{
+    margin-top:19px;
+  }
+  .author-meta{
+    font-size: 13px;
+    
+  }
+  .share-btn{
+    width: 70%;
+    padding: 15px 45px ;
+  }
+
+  .social-buttons{
+    display: none;
+  }
+  .content h1{
+    font-size: 32px;
+  }
+  .read-item img{
+    width: 325px;
+    height: 194px;
+  }
+  .read-item p{
+    display: none;
+  }
+  .mobile-img{
+    display: none;
+  }
+
+
+.meta {
+  font-family: SF Pro Text;
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 0 16px;
+}
+.name{
+  font-size: 13px;
+  font-weight: 700;
+  margin: 30px 0 0 16px;
+}
+  .note{
+    margin: 24px 0 20px 20px;
+  }
+
+
+  .pic {
+margin: 0;
+  }
+.paraha{
+  display: none;
+}
+  .content-mobile{
+    display: block;
+  }
+  .pic img{
+    width: 
+    375px;
+    height: 250px;
+   
+  }
+
+  .pic p{
+    font-size: 13px;
+    width: 80%;
+
+  }
+  .dashed-line{
+    width: 95%;
+    margin: 24px auto;
+  }
+  .authernit{
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+  .path2{
+    margin-top: 91px 0 62px;
+  }
+
+  .read-next{
+    width: 100%;
+    margin: 27px auto 0px;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .newsletter-box p{
+    width: 70%;
+  }
+  .newsletter-form{
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  .newsletter-box {
+    margin: 20px auto;
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .scrolling-text {
+    font-size: 14px;
+    gap: 8px;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    margin-bottom: 40px;
+  }
+
+  .footer-title {
+    font-size: 24px;
+  }
+
+  .footer-desc {
+    font-size: 13px;
+    width: 65%;
+    height: auto;
+  }
+
+  .footer-links {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 10px;
+  }
+
+  .footer-copy {
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .mobile-only-text {
+    display: block;
+  }
+  .scrolling-text {
+    display: none;
+  }
+}

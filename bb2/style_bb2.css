@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 134px;
+  padding: 53px 0px 43px 64px;
+}
+.logo {
+  font-size: 44px;
+  font-family: "Times New Roman", Times, serif;
+  width: 396px;
+  height: 38px;
+  font-weight: 500;
+}
+.menu-icon {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #000;
+}
+.nav {
+  margin-right: 41px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  gap: 31px;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+}
+.ke_ngang {
+  border-top: 1px solid grey;
+  width: 100%;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: auto;
+  position: relative; */
+}
+.hero img {
+  width: 854px;
+  height: 533px;
+  margin-top: 76px;
+}
+.title {
+  font-family: New York Extra Large;
+  font-weight: 700;
+  font-size: 54px;
+  margin: 44px 0 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 858px;
+  height: 162px;
+}
+.title2 {
+  font-family: monospace, "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 592px;
+  height: 68px;
+  display: block;
+  margin: 0;
+}
+
+.ke {
+  border-top: 2px solid black;
+  width: 50%;
+
+  margin: 34px auto 64px;
+}
+.all {
+  height: 53px;
+  width: 225px;
+  margin: 0 auto;
+  white-space: nowrap;
+  margin-bottom: 39px;
+  font-family: New York Extra Large;
+  font-weight: 700;
+  font-size: 44px;
+  text-align: center;
+}
+.image-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-col {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.img-col img {
+  display: block;
+  width: 304px;
+  height: 176px;
+  margin: 0;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.img-col p {
+  display: flex;
+  font-size: 22px;
+  width: 262px;
+  height: 78px;
+  font-family: SF Pro Display;
+  text-align: center;
+  margin: 0px 0px 64px;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 18px 0px;
+  text-align: center;
+}
+
+.scrolling-text {
+  font-family: SF Pro Text, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-bottom: 105px;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 2.4px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+.mobile-only-text {
+  display: none;
+  font-family: "SF Pro Text", sans-serif;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-bottom: 105px;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 2.3px;
+}
+.title-digital1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.title-digital2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px 0px 26px 0px;
+}
+
+.footer-desc {
+  font-family: "New York Extra Large", serif;
+  max-width: 488px;
+  height: 71px;
+  text-align: center;
+  margin: 0 auto 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  margin: 0px 616px 20px;
+  width: 209px;
+  height: 27px;
+}
+
+.footer-links a {
+  color: white;
+  margin-right: 17px;
+  font-weight: 500;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #aaa;
+  line-height: 1.4;
+}
+
+.mobile-only {
+  display: none;
+}
+@media (max-width: 768px) {
+  .site-header {
+    width: 375px;
+    height: 65px;
+    padding: 0;
+     
+  }
+
+  .logo {
+    width: 217px;
+    height: 20px;
+    margin: 24px 12px 21px 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    /* margin: 7px 20px 24px 0px; */
+    /* padding-left: 30px; */
+    padding-right: 24px;
+    font-size: 28px;
+    cursor: pointer;
+    /* width: 24px;
+    height: 30px; */
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    margin-top: 52px;
+  }
+
+  .title {
+    font-size: 36px;
+    width: 90%;
+    height: auto;
+
+    margin: 32px 20px 24px 20px;
+  }
+
+  .title2 {
+    font-size: 16px;
+    font-weight: 400;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ke {
+    width: 100%;
+    margin: 52px auto 56px;
+  }
+
+  .all {
+    font-size: 32px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 29px;
+  }
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .image-row {
+    grid-template-columns: auto;
+    gap: 16px;
+    width: 88%;
+    text-align: center;
+    margin: 0px 20px 0px;
+  }
+
+  .img-col img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .img-col p {
+    width: 55%;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px auto 40px;
+  }
+
+  .scrolling-text {
+    font-size: 14px;
+    gap: 8px;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+    margin-bottom: 40px;
+  }
+
+  .footer-title {
+    font-size: 24px;
+  }
+
+  .footer-desc {
+    font-size: 13px;
+    width: 65%;
+    height: auto;
+  }
+
+  .footer-links {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 10px;
+  }
+
+  .footer-copy {
+    font-size: 11px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .mobile-only-text {
+    display: block;
+  }
+  .scrolling-text {
+    display: none;
+  }
+}
