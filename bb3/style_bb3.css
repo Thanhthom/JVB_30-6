@@ -452,6 +452,9 @@
 .content h1{
   font-size: 44px; text-align: center; font-weight: 700; margin: 0;
 }
+.content-move{
+  display: none;
+}
 
 
 @media (max-width: 768px){
@@ -490,7 +493,9 @@
   .nav {
    display: none;
   }
-
+ .content-move{
+  display: block;
+}
   
   .menu-icon {
     display: block;
