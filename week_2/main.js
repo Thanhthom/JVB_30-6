@@ -1,5 +1,5 @@
 class WindowsCalendar {
-    constructor() {
+     constructor() {
         this.currentDate = new Date();
         this.selectedDate = new Date();
         this.currentMonth = new Date();
@@ -32,21 +32,6 @@ class WindowsCalendar {
         const calendarBody = document.getElementById('calendarBody'); 
         const chevronIcon = document.querySelector('#toggleChevron i');
         const calendar = document.querySelector('.windows-calendar');
-
-        this.isCollapsed = !this.isCollapsed;
-
-        if (this.isCollapsed) {
-            
-            calendarBody.classList.add('collapsed');
-            chevronIcon.classList.remove('fa-chevron-down');
-            chevronIcon.classList.add('fa-chevron-up');
-            calendar.classList.add('collapsed');
-        } else {
-            calendarBody.classList.remove('collapsed');
-            chevronIcon.classList.remove('fa-chevron-up');
-            chevronIcon.classList.add('fa-chevron-down');
-            calendar.classList.remove('collapsed');
-        }
     }
     
 
@@ -65,14 +50,6 @@ class WindowsCalendar {
         
         document.getElementById('focusBtn').addEventListener('click', () => this.toggleFocus());
         document.getElementById('toggleChevron').addEventListener('click', () => this.toggleCalendarBody())
-        document.getElementById('toggleChevron').addEventListener('click', () => {
-            const calendarBody = document.querySelector('.calendar-content');
-            const icon = document.querySelector('#toggleChevron i');
-
-            calendarBody.classList.toggle('collapsed');
-            icon.classList.toggle('fa-chevron-down');
-            icon.classList.toggle('fa-chevron-up');
-        });
 
     }
 
