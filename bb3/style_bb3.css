@@ -146,8 +146,6 @@
   overflow: hidden;
   width: fit-content;
   background-color: #fff;
-  /* margin-left: 213px; */
-  /* margin-top: 15px; */
 }
 
 .share-btn {
@@ -248,11 +246,11 @@
   width: 600px;
 }
 .authernit {
-  /* width: 550px; */
+  width: 70%;
   text-align: justify;
   font-size: 16px;
   font-family: SF Pro Text;
-  margin: 0 auto;
+  margin: 0 20px;
 }
 
 .path2 {
