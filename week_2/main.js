@@ -7,8 +7,6 @@ class WindowsCalendar {
         this.timeMinutes = 30;
         this.focusInterval = null;   
         this.remainingSeconds = 0;      
-
-        
         this.months = [
             'January', 'February', 'March', 'April', 'May', 'June',
             'July', 'August', 'September', 'October', 'November', 'December'
@@ -28,13 +26,20 @@ class WindowsCalendar {
         this.startRealTimeUpdate();
     }
 
-    toggleCalendarBody() {
-        const calendarBody = document.getElementById('calendarBody'); 
-        const chevronIcon = document.querySelector('#toggleChevron i');
-        const calendar = document.querySelector('.windows-calendar');
+   toggleCalendarBody() {
+    const calendarContent = document.getElementById('calendarContent');
+    const chevronIcon = document.querySelector('#toggleChevron i');
+    const isHidden = calendarContent.classList.toggle('hidden');
+    chevronIcon.classList.toggle('fa-chevron-up', isHidden);
+    chevronIcon.classList.toggle('fa-chevron-down', !isHidden);
+    const calendarNav = document.getElementById('calendarNav');
+    const chevronIcon1 = document.querySelector('#toggleChevron i')
+    const isHidden1 = calendarNav.classList.toggle('hidden');
+    chevronIcon1.classList.toggle('fa-chevron-up', isHidden);
+    chevronIcon1.classList.toggle('fa-chevron-down', !isHidden);
     }
-    
 
+    
     bindEvents() {
         document.getElementById('headerDate').addEventListener('click', () => this.handleHeaderClick());
         document.getElementById('navTitle').addEventListener('click', () => this.handleNavTitleClick());
@@ -50,7 +55,6 @@ class WindowsCalendar {
         
         document.getElementById('focusBtn').addEventListener('click', () => this.toggleFocus());
         document.getElementById('toggleChevron').addEventListener('click', () => this.toggleCalendarBody())
-
     }
 
     adjustTime(minutes) {
@@ -73,18 +77,11 @@ class WindowsCalendar {
             
             text.textContent = 'Stop';
             icon.textContent = '⏸';
-            focusBtn.style.color = '#60a5fa';
-
-            
+            focusBtn.style.color = '#60a5fa';            
             this.remainingSeconds = this.timeMinutes * 60;
-
             this.focusInterval = setInterval(() => {
                 this.remainingSeconds--;
-
-                
-                this.updateCountdownDisplay();
-
-                
+                this.updateCountdownDisplay(); 
                 if (this.remainingSeconds <= 0) {
                     clearInterval(this.focusInterval);
                     this.focusInterval = null;
@@ -94,7 +91,6 @@ class WindowsCalendar {
             }, 1000);
 
         } else {
-            
             clearInterval(this.focusInterval);
             this.focusInterval = null;
             this.resetFocusButton();
@@ -116,8 +112,6 @@ class WindowsCalendar {
     icon.textContent = '\u25B6';
     focusBtn.style.color = '#888888';
     }
-
-
 
     startRealTimeUpdate() {
         setInterval(() => {
@@ -161,7 +155,6 @@ class WindowsCalendar {
         }
         this.updateDisplay();
     }
-
 
     updateDisplay() {
         this.updateHeaderDate();
@@ -224,7 +217,7 @@ class WindowsCalendar {
         }
     }
 
-renderMonthView(grid) {
+    renderMonthView(grid) {
     const year = this.currentMonth.getFullYear();
     const month = this.currentMonth.getMonth();
 
@@ -305,7 +298,6 @@ renderMonthView(grid) {
     }
 }
 
-
     renderYearView(grid) {
         for (let month = 0; month < 12; month++) {
             const monthElement = document.createElement('div');
@@ -360,7 +352,6 @@ renderMonthView(grid) {
             grid.appendChild(yearElement);
         }
     }
-
     isSameDay(date1, date2) {
         return (
             date1.getDate() === date2.getDate() &&
@@ -368,12 +359,12 @@ renderMonthView(grid) {
             date1.getFullYear() === date2.getFullYear()
         );
     }
-
-
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    new WindowsCalendar();
-});
+    document.addEventListener('DOMContentLoaded', () => {
+        new WindowsCalendar();
+    });
 
-grid.classList.add('calendar-visible');
+    grid.classList.add('calendar-visible');
+
+    
