@@ -55,7 +55,6 @@
       if (e.touches) e.clientX = e.touches[0].clientX;
       const dx = e.clientX - xPos;
       xPos = e.clientX;
-
       gsap.to(ring, {
         rotationY: "-=" + dx,
         onUpdate: () => {
@@ -65,7 +64,6 @@
         }
       });
     });
-
 
     function getBgPos(i) {
       const rotation = gsap.getProperty(ring, 'rotationY') - 180 - i * (360 / numImgs);

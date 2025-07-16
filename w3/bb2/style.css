@@ -8,7 +8,7 @@ html, body {
 
     .stage, .ring {
       width: 100%;
-      height: 100%;
+      height: 100%; 
       transform-style: preserve-3d;
     }
 
@@ -24,11 +24,12 @@ html, body {
 
     .img {
       position: absolute;
-      width: 100%;
-      height: 100%;
+      max-width: 400px;
+      max-height: 400px;
+      width: 90%;
+      height: 90%;
       background-size: cover;
       background-position: center;
       backface-visibility: hidden;
       transition: opacity 0.3s ease;
-      /* background-size: cover; */
     }
