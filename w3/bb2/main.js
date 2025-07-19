@@ -35,7 +35,7 @@
       gsap.to('.img', { opacity: 1, ease: 'power2.inOut' });
     });
 
-    // Kéo chuột để xoay vòng
+    // xoay vòng.
     let isDragging = false;
 
     $(window).on('mousedown touchstart', (e) => {
